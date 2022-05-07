@@ -8,7 +8,7 @@
 [![codecov](https://img.shields.io/codecov/c/github/AlexXanderGrib/crypt-pass/main.svg)](https://codecov.io/gh/AlexXanderGrib/crypt-pass)
 [![GitHub](https://img.shields.io/github/stars/AlexXanderGrib/crypt-pass.svg)](https://github.com/AlexXanderGrib/crypt-pass)
 [![crypt-pass](https://snyk.io/advisor/npm-package/crypt-pass/badge.svg)](https://snyk.io/advisor/npm-package/crypt-pass)
-[![Known Vulnerabilities](https://snyk.io/test/npm/axios/badge.svg)](https://snyk.io/test/npm/axios)
+[![Known Vulnerabilities](https://snyk.io/test/npm/crypt-pass/badge.svg)](https://snyk.io/test/npm/crypt-pass)
 [![Quality](https://img.shields.io/npms-io/quality-score/crypt-pass.svg?label=quality%20%28npms.io%29&)](https://npms.io/search?q=crypt-pass)
 [![npm](https://img.shields.io/npm/v/crypt-pass.svg)](https://npmjs.com/package/crypt-pass)
 [![license MIT](https://img.shields.io/npm/l/crypt-pass.svg)](https://github.com/AlexXanderGrib/crypt-pass/blob/main/LICENSE.txt)
