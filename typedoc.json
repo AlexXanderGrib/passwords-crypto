@@ -1,0 +1,27 @@
+{
+  "name": "Crypt Pass",
+  "out": "./docs/api",
+  "entryPoints": [
+    "./index.d.ts",
+    "./argon2d.d.ts",
+    "./argon2i.d.ts",
+    "./argon2id.d.ts",
+    "./bcrypt.d.ts",
+    "./pbkdf2.d.ts",
+    "./scrypt.d.ts",
+    "./sha256.d.ts",
+    "./sha512.d.ts"
+  ],
+  "exclude": [
+    "src/__test__",
+    "**/node_modules/**"
+  ],
+  "externalPattern": [
+    "**/node_modules/**"
+  ],
+  "excludePrivate": false,
+  "hideGenerator": true,
+  "readme": "README.md",
+  "theme": "default",
+  "tsconfig": "./tsconfig.json"
+}

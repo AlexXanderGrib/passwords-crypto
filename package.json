@@ -1,0 +1,200 @@
+{
+  "name": "crypt-pass",
+  "version": "1.0.0",
+  "description": "⭐ Password hashing and verification library providing single interface for SHA256, SCrypt, BCrypt, Argon2 and PBKDF2 algorithms",
+  "keywords": [
+    "crypto",
+    "hashing",
+    "password",
+    "passwords",
+    "sha256",
+    "scrypt",
+    "bcrypt",
+    "argon2",
+    "pbkdf2",
+    "node",
+    "nodejs",
+    "typed",
+    "typescript",
+    "backed"
+  ],
+  "files": [
+    "dist/",
+    "examples/",
+    "coverage/",
+    "docs/",
+    "src/",
+    "README.md",
+    "LICENSE.txt",
+    "SECURITY.md",
+    "argon2d.js",
+    "argon2d.mjs",
+    "argon2d.d.ts",
+    "argon2i.js",
+    "argon2i.mjs",
+    "argon2i.d.ts",
+    "argon2id.js",
+    "argon2id.mjs",
+    "argon2id.d.ts",
+    "bcrypt.js",
+    "bcrypt.mjs",
+    "bcrypt.d.ts",
+    "pbkdf2.js",
+    "pbkdf2.mjs",
+    "pbkdf2.d.ts",
+    "scrypt.js",
+    "scrypt.mjs",
+    "scrypt.d.ts",
+    "sha256.js",
+    "sha256.mjs",
+    "sha256.d.ts",
+    "sha512.js",
+    "sha512.mjs",
+    "sha512.d.ts"
+  ],
+  "type": "commonjs",
+  "main": "./index.js",
+  "module": "./index.mjs",
+  "types": "./index.d.ts",
+  "typings": "./index.d.ts",
+  "sideEffects": false,
+  "directories": {
+    "doc": "./docs",
+    "lib": "./dist",
+    "test": "./src/__tests__",
+    "example": "./examples"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexXanderGrib/crypt-pass.git"
+  },
+  "author": {
+    "name": "Alexander Gribochkin",
+    "email": "me@alexxgrib.me",
+    "url": "https://alexxgrib.me"
+  },
+  "maintainers": [
+    {
+      "name": "Alexander Gribochkin",
+      "email": "me@alexxgrib.me",
+      "url": "https://alexxgrib.me"
+    }
+  ],
+  "license": "MIT",
+  "private": false,
+  "bugs": {
+    "url": "https://github.com/AlexXanderGrib/crypt-pass/issues",
+    "email": "me@alexxgrib.me"
+  },
+  "homepage": "https://github.com/AlexXanderGrib/crypt-pass#readme",
+  "scripts": {
+    "test": "jest",
+    "build:dist": "rimraf dist && rollup -c && node ./scripts/exports.js",
+    "build:docs": "typedoc",
+    "build": "npm run build:dist && npm run build:docs",
+    "prepack": "npm run build",
+    "prepublishOnly": "npm run generate-lock-files",
+    "generate-lock-files": "npm i && yarn install",
+    "glf": "npm run generate-lock-files",
+    "lint": "eslint src/*",
+    "prettify": "prettier --write src/**/*"
+  },
+  "optionalDependencies": {
+    "argon2": "^0.28.5",
+    "bcrypt": "^5.0.1"
+  },
+  "devDependencies": {
+    "@rollup/plugin-replace": "^4.0.0",
+    "@types/bcrypt": "^5.0.0",
+    "@types/jest": "^27.4.1",
+    "@types/node": "^17.0.30",
+    "@types/uuid": "^8.3.4",
+    "@typescript-eslint/eslint-plugin": "^5.21.0",
+    "@typescript-eslint/parser": "^5.21.0",
+    "eslint": "^8.14.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-security": "^1.5.0",
+    "eslint-plugin-unicorn": "^42.0.0",
+    "glob": "^8.0.1",
+    "husky": "^7.0.4",
+    "jest": "^27.1.4",
+    "prettier": "^2.6.2",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.70.2",
+    "rollup-plugin-cleanup": "^3.2.1",
+    "rollup-plugin-prettier": "^2.2.2",
+    "rollup-plugin-typescript2": "^0.31.2",
+    "ts-jest": "^27.1.4",
+    "ts-node": "^10.7.0",
+    "typedoc": "^0.22.15",
+    "typedoc-plugin-markdown": "^3.12.1",
+    "typedoc-plugin-missing-exports": "^0.22.6",
+    "typescript": "^4.6.4"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint && npm run prettify",
+      "pre-push": "npm run build:docs"
+    }
+  },
+  "exports": {
+    ".": {
+      "require": "./index.js",
+      "import": "./index.mjs",
+      "default": "./index.mjs",
+      "types": "./index.d.ts"
+    },
+    "./argon2d": {
+      "require": "./argon2d.js",
+      "import": "./argon2d.mjs",
+      "default": "./argon2d.mjs",
+      "types": "./argon2d.d.ts"
+    },
+    "./argon2i": {
+      "require": "./argon2i.js",
+      "import": "./argon2i.mjs",
+      "default": "./argon2i.mjs",
+      "types": "./argon2i.d.ts"
+    },
+    "./argon2id": {
+      "require": "./argon2id.js",
+      "import": "./argon2id.mjs",
+      "default": "./argon2id.mjs",
+      "types": "./argon2id.d.ts"
+    },
+    "./bcrypt": {
+      "require": "./bcrypt.js",
+      "import": "./bcrypt.mjs",
+      "default": "./bcrypt.mjs",
+      "types": "./bcrypt.d.ts"
+    },
+    "./pbkdf2": {
+      "require": "./pbkdf2.js",
+      "import": "./pbkdf2.mjs",
+      "default": "./pbkdf2.mjs",
+      "types": "./pbkdf2.d.ts"
+    },
+    "./scrypt": {
+      "require": "./scrypt.js",
+      "import": "./scrypt.mjs",
+      "default": "./scrypt.mjs",
+      "types": "./scrypt.d.ts"
+    },
+    "./sha256": {
+      "require": "./sha256.js",
+      "import": "./sha256.mjs",
+      "default": "./sha256.mjs",
+      "types": "./sha256.d.ts"
+    },
+    "./sha512": {
+      "require": "./sha512.js",
+      "import": "./sha512.mjs",
+      "default": "./sha512.mjs",
+      "types": "./sha512.d.ts"
+    }
+  }
+}
