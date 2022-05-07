@@ -1,8 +1,8 @@
-[Crypt Pass](../README.md) / [Modules](../modules.md) / [index](../modules/index.md) / PBKDF2HashingAdapter
+[Crypt Pass](../README.md) / [Modules](../modules.md) / [scrypt](../modules/scrypt.md) / SCryptHashingAdapter
 
-# Class: PBKDF2HashingAdapter
+# Class: SCryptHashingAdapter
 
-[index](../modules/index.md).PBKDF2HashingAdapter
+[scrypt](../modules/scrypt.md).SCryptHashingAdapter
 
 **`export`**
 
@@ -10,34 +10,32 @@
 
 - [`BaseHashingAdapter`](index._internal_.BaseHashingAdapter.md)
 
-  ↳ **`PBKDF2HashingAdapter`**
+  ↳ **`SCryptHashingAdapter`**
 
 ## Table of contents
 
 ### Constructors
 
-- [constructor](index.PBKDF2HashingAdapter.md#constructor)
+- [constructor](scrypt.SCryptHashingAdapter.md#constructor)
 
 ### Properties
 
-- [\_options](index.PBKDF2HashingAdapter.md#_options)
-- [digest](index.PBKDF2HashingAdapter.md#digest)
-- [iterations](index.PBKDF2HashingAdapter.md#iterations)
-- [keyLength](index.PBKDF2HashingAdapter.md#keylength)
-- [name](index.PBKDF2HashingAdapter.md#name)
+- [\_options](scrypt.SCryptHashingAdapter.md#_options)
+- [keyLength](scrypt.SCryptHashingAdapter.md#keylength)
+- [name](scrypt.SCryptHashingAdapter.md#name)
 
 ### Methods
 
-- [\_hash](index.PBKDF2HashingAdapter.md#_hash)
-- [\_verify](index.PBKDF2HashingAdapter.md#_verify)
-- [hash](index.PBKDF2HashingAdapter.md#hash)
-- [verify](index.PBKDF2HashingAdapter.md#verify)
+- [\_hash](scrypt.SCryptHashingAdapter.md#_hash)
+- [\_verify](scrypt.SCryptHashingAdapter.md#_verify)
+- [hash](scrypt.SCryptHashingAdapter.md#hash)
+- [verify](scrypt.SCryptHashingAdapter.md#verify)
 
 ## Constructors
 
 ### constructor
 
-• **new PBKDF2HashingAdapter**(`options?`)
+• **new SCryptHashingAdapter**(`options?`)
 
 Creates an instance of BaseHashingAdapter.
 
@@ -73,39 +71,19 @@ dist/cjs/adapter.d.ts:43
 
 ___
 
-### digest
-
-• `Readonly` **digest**: `string`
-
-#### Defined in
-
-dist/cjs/adapters/pbkdf2.d.ts:14
-
-___
-
-### iterations
-
-• `Readonly` **iterations**: `number`
-
-#### Defined in
-
-dist/cjs/adapters/pbkdf2.d.ts:12
-
-___
-
 ### keyLength
 
 • `Readonly` **keyLength**: `number`
 
 #### Defined in
 
-dist/cjs/adapters/pbkdf2.d.ts:13
+dist/cjs/adapters/scrypt.d.ts:12
 
 ___
 
 ### name
 
-• `Readonly` **name**: ``"pbkdf2"``
+• `Readonly` **name**: ``"scrypt"``
 
 #### Overrides
 
@@ -113,7 +91,7 @@ ___
 
 #### Defined in
 
-dist/cjs/adapters/pbkdf2.d.ts:11
+dist/cjs/adapters/scrypt.d.ts:11
 
 ## Methods
 
@@ -121,7 +99,7 @@ dist/cjs/adapters/pbkdf2.d.ts:11
 
 ▸ `Protected` **_hash**(`password`, `salt`): `Promise`<`Buffer`\>
 
-**`memberof`** PBKDF2HashingAdapter
+**`memberof`** SCryptHashingAdapter
 
 #### Parameters
 
@@ -142,7 +120,7 @@ dist/cjs/adapters/pbkdf2.d.ts:11
 
 #### Defined in
 
-dist/cjs/adapters/pbkdf2.d.ts:24
+dist/cjs/adapters/scrypt.d.ts:22
 
 ___
 

@@ -4,12 +4,6 @@
 
 ## Table of contents
 
-### References
+### Classes
 
-- [Argon2iHashingAdapter](argon2i.md#argon2ihashingadapter)
-
-## References
-
-### Argon2iHashingAdapter
-
-Re-exports [Argon2iHashingAdapter](../classes/index.Argon2iHashingAdapter.md)
+- [Argon2iHashingAdapter](../classes/argon2i.Argon2iHashingAdapter.md)

@@ -4,12 +4,6 @@
 
 ## Table of contents
 
-### References
+### Classes
 
-- [PBKDF2HashingAdapter](pbkdf2.md#pbkdf2hashingadapter)
-
-## References
-
-### PBKDF2HashingAdapter
-
-Re-exports [PBKDF2HashingAdapter](../classes/index.PBKDF2HashingAdapter.md)
+- [PBKDF2HashingAdapter](../classes/pbkdf2.PBKDF2HashingAdapter.md)

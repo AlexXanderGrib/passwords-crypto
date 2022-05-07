@@ -1,18 +1,18 @@
-# Crypt Pass
+# Universal NodeJS Passwords Crypto
 
 > Password hashing and verification library providing single interface for SHA256, SCrypt, BCrypt, Argon2 and PBKDF2 algorithms
 
-[![Test Status](https://github.com/AlexXanderGrib/crypt-pass/actions/workflows/test.yml/badge.svg)](https://github.com/AlexXanderGrib/crypt-pass)
-[![Downloads](https://img.shields.io/npm/dt/crypt-pass.svg)](https://npmjs.com/package/crypt-pass)
-[![last commit](https://img.shields.io/github/last-commit/AlexXanderGrib/crypt-pass.svg)](https://github.com/AlexXanderGrib/crypt-pass)
-[![codecov](https://img.shields.io/codecov/c/github/AlexXanderGrib/crypt-pass/main.svg)](https://codecov.io/gh/AlexXanderGrib/crypt-pass)
-[![GitHub](https://img.shields.io/github/stars/AlexXanderGrib/crypt-pass.svg)](https://github.com/AlexXanderGrib/crypt-pass)
-[![crypt-pass](https://snyk.io/advisor/npm-package/crypt-pass/badge.svg)](https://snyk.io/advisor/npm-package/crypt-pass)
-[![Known Vulnerabilities](https://snyk.io/test/npm/crypt-pass/badge.svg)](https://snyk.io/test/npm/crypt-pass)
-[![Quality](https://img.shields.io/npms-io/quality-score/crypt-pass.svg?label=quality%20%28npms.io%29&)](https://npms.io/search?q=crypt-pass)
-[![npm](https://img.shields.io/npm/v/crypt-pass.svg)](https://npmjs.com/package/crypt-pass)
-[![license MIT](https://img.shields.io/npm/l/crypt-pass.svg)](https://github.com/AlexXanderGrib/crypt-pass/blob/main/LICENSE.txt)
-[![Size](https://img.shields.io/bundlephobia/minzip/crypt-pass)](https://bundlephobia.com/package/crypt-pass)
+[![Test Status](https://github.com/AlexXanderGrib/passwords-crypto/actions/workflows/test.yml/badge.svg)](https://github.com/AlexXanderGrib/passwords-crypto)
+[![Downloads](https://img.shields.io/npm/dt/unpc.svg)](https://npmjs.com/package/unpc)
+[![last commit](https://img.shields.io/github/last-commit/AlexXanderGrib/passwords-crypto.svg)](https://github.com/AlexXanderGrib/passwords-crypto)
+[![codecov](https://img.shields.io/codecov/c/github/AlexXanderGrib/passwords-crypto/main.svg)](https://codecov.io/gh/AlexXanderGrib/passwords-crypto)
+[![GitHub](https://img.shields.io/github/stars/AlexXanderGrib/passwords-crypto.svg)](https://github.com/AlexXanderGrib/passwords-crypto)
+[![unpc](https://snyk.io/advisor/npm-package/unpc/badge.svg)](https://snyk.io/advisor/npm-package/unpc)
+[![Known Vulnerabilities](https://snyk.io/test/npm/unpc/badge.svg)](https://snyk.io/test/npm/unpc)
+[![Quality](https://img.shields.io/npms-io/quality-score/unpc.svg?label=quality%20%28npms.io%29&)](https://npms.io/search?q=unpc)
+[![npm](https://img.shields.io/npm/v/unpc.svg)](https://npmjs.com/package/unpc)
+[![license MIT](https://img.shields.io/npm/l/unpc.svg)](https://github.com/AlexXanderGrib/passwords-crypto/blob/main/LICENSE.txt)
+[![Size](https://img.shields.io/bundlephobia/minzip/unpc)](https://bundlephobia.com/package/unpc)
 
 ## Why use this lib?
 
@@ -24,15 +24,15 @@
 
 - Using `npm`:
   ```bash
-  npm i crypt-pass
+  npm i unpc
   ```
 - Using `Yarn`:
   ```bash
-  yarn add crypt-pass
+  yarn add unpc
   ```
 - Using `pnpm`:
   ```bash
-  pnpm add crypt-pass
+  pnpm add unpc
   ```
 
 ### Additional libraries
@@ -60,8 +60,8 @@ npm i bcrypt
 ### Basic
 
 ```javascript
-import { Crypt } from "crypt-pass";
-import { Argon2iHashingAdapter } from "crypt-pass/argon2i";
+import { Crypt } from "unpc";
+import { Argon2iHashingAdapter } from "unpc/argon2i";
 
 const crypt = new Crypt({
   default: "argon2i",
@@ -83,13 +83,13 @@ console.log(isCorrect); // true
 
 | Path                    | Adapter class name         | Algorithm | Requirements                               |
 | ----------------------- | -------------------------- | --------- | ------------------------------------------ |
-| `crypt-pass/argon2`     | `Argon2HashingAdapter`     | Argon2-i  | Package `argon2`                           |
-| `crypt-pass/argon2d`    | `Argon2dHashingAdapter`    | Argon2-d  | Package `argon2`                           |
-| `crypt-pass/argon2i`    | `Argon2iHashingAdapter`    | Argon2-i  | Package `argon2`                           |
-| `crypt-pass/argon2id`   | `Argon2idHashingAdapter`   | Argon2-id | Package `argon2`                           |
-| `crypt-pass/argon2id`   | `Argon2idHashingAdapter`   | Argon2-id | Package `argon2`                           |
-| `crypt-pass/bcrypt`     | `BCryptHashingAdapter`     | Bcrypt    | Package `bcrypt`                           |
-| `crypt-pass/pbkdf2`     | `PBKDF2HashingAdapter`     | PBKDF2    | Node > `v0.5.5`                            |
-| `crypt-pass/scrypt`     | `SCryptHashingAdapter`     | Scrypt    | Node > `v10.5.0`                           |
-| ~~`crypt-pass/sha256`~~ | ~~`Sha256HashingAdapter`~~ | SHA-256   | Being brave enough to use it. **Insecure** |
-| ~~`crypt-pass/sha512`~~ | ~~`Sha512HashingAdapter`~~ | SHA-512   | Being brave enough to use it. **Insecure** |
+| `unpc/argon2`     | `Argon2HashingAdapter`     | Argon2-i  | Package `argon2`                           |
+| `unpc/argon2d`    | `Argon2dHashingAdapter`    | Argon2-d  | Package `argon2`                           |
+| `unpc/argon2i`    | `Argon2iHashingAdapter`    | Argon2-i  | Package `argon2`                           |
+| `unpc/argon2id`   | `Argon2idHashingAdapter`   | Argon2-id | Package `argon2`                           |
+| `unpc/argon2id`   | `Argon2idHashingAdapter`   | Argon2-id | Package `argon2`                           |
+| `unpc/bcrypt`     | `BCryptHashingAdapter`     | Bcrypt    | Package `bcrypt`                           |
+| `unpc/pbkdf2`     | `PBKDF2HashingAdapter`     | PBKDF2    | Node > `v0.5.5`                            |
+| `unpc/scrypt`     | `SCryptHashingAdapter`     | Scrypt    | Node > `v10.5.0`                           |
+| ~~`unpc/sha256`~~ | ~~`Sha256HashingAdapter`~~ | SHA-256   | Being brave enough to use it. **Insecure** |
+| ~~`unpc/sha512`~~ | ~~`Sha512HashingAdapter`~~ | SHA-512   | Being brave enough to use it. **Insecure** |

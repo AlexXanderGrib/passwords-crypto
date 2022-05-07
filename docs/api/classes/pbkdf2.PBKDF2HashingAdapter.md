@@ -1,41 +1,43 @@
-[Crypt Pass](../README.md) / [Modules](../modules.md) / [index](../modules/index.md) / Sha512HashingAdapter
+[Crypt Pass](../README.md) / [Modules](../modules.md) / [pbkdf2](../modules/pbkdf2.md) / PBKDF2HashingAdapter
 
-# Class: Sha512HashingAdapter
+# Class: PBKDF2HashingAdapter
 
-[index](../modules/index.md).Sha512HashingAdapter
+[pbkdf2](../modules/pbkdf2.md).PBKDF2HashingAdapter
 
 **`export`**
 
 ## Hierarchy
 
-- [`SimpleHashHashingAdapter`](index.SimpleHashHashingAdapter.md)
+- [`BaseHashingAdapter`](index._internal_.BaseHashingAdapter.md)
 
-  ↳ **`Sha512HashingAdapter`**
+  ↳ **`PBKDF2HashingAdapter`**
 
 ## Table of contents
 
 ### Constructors
 
-- [constructor](index.Sha512HashingAdapter.md#constructor)
+- [constructor](pbkdf2.PBKDF2HashingAdapter.md#constructor)
 
 ### Properties
 
-- [\_options](index.Sha512HashingAdapter.md#_options)
-- [iterations](index.Sha512HashingAdapter.md#iterations)
-- [name](index.Sha512HashingAdapter.md#name)
+- [\_options](pbkdf2.PBKDF2HashingAdapter.md#_options)
+- [digest](pbkdf2.PBKDF2HashingAdapter.md#digest)
+- [iterations](pbkdf2.PBKDF2HashingAdapter.md#iterations)
+- [keyLength](pbkdf2.PBKDF2HashingAdapter.md#keylength)
+- [name](pbkdf2.PBKDF2HashingAdapter.md#name)
 
 ### Methods
 
-- [\_hash](index.Sha512HashingAdapter.md#_hash)
-- [\_verify](index.Sha512HashingAdapter.md#_verify)
-- [hash](index.Sha512HashingAdapter.md#hash)
-- [verify](index.Sha512HashingAdapter.md#verify)
+- [\_hash](pbkdf2.PBKDF2HashingAdapter.md#_hash)
+- [\_verify](pbkdf2.PBKDF2HashingAdapter.md#_verify)
+- [hash](pbkdf2.PBKDF2HashingAdapter.md#hash)
+- [verify](pbkdf2.PBKDF2HashingAdapter.md#verify)
 
 ## Constructors
 
 ### constructor
 
-• **new Sha512HashingAdapter**(`options?`)
+• **new PBKDF2HashingAdapter**(`options?`)
 
 Creates an instance of BaseHashingAdapter.
 
@@ -49,7 +51,7 @@ Creates an instance of BaseHashingAdapter.
 
 #### Inherited from
 
-[SimpleHashHashingAdapter](index.SimpleHashHashingAdapter.md).[constructor](index.SimpleHashHashingAdapter.md#constructor)
+[BaseHashingAdapter](index._internal_.BaseHashingAdapter.md).[constructor](index._internal_.BaseHashingAdapter.md#constructor)
 
 #### Defined in
 
@@ -63,7 +65,7 @@ dist/cjs/adapter.d.ts:50
 
 #### Inherited from
 
-[SimpleHashHashingAdapter](index.SimpleHashHashingAdapter.md).[_options](index.SimpleHashHashingAdapter.md#_options)
+[BaseHashingAdapter](index._internal_.BaseHashingAdapter.md).[_options](index._internal_.BaseHashingAdapter.md#_options)
 
 #### Defined in
 
@@ -71,31 +73,47 @@ dist/cjs/adapter.d.ts:43
 
 ___
 
+### digest
+
+• `Readonly` **digest**: `string`
+
+#### Defined in
+
+dist/cjs/adapters/pbkdf2.d.ts:14
+
+___
+
 ### iterations
 
 • `Readonly` **iterations**: `number`
 
-#### Inherited from
+#### Defined in
 
-[SimpleHashHashingAdapter](index.SimpleHashHashingAdapter.md).[iterations](index.SimpleHashHashingAdapter.md#iterations)
+dist/cjs/adapters/pbkdf2.d.ts:12
+
+___
+
+### keyLength
+
+• `Readonly` **keyLength**: `number`
 
 #### Defined in
 
-dist/cjs/simple-hash.adapter.d.ts:13
+dist/cjs/adapters/pbkdf2.d.ts:13
 
 ___
 
 ### name
 
-• `Readonly` **name**: ``"sha512"``
+• `Readonly` **name**: ``"pbkdf2"``
 
 #### Overrides
 
-[SimpleHashHashingAdapter](index.SimpleHashHashingAdapter.md).[name](index.SimpleHashHashingAdapter.md#name)
+[BaseHashingAdapter](index._internal_.BaseHashingAdapter.md).[name](index._internal_.BaseHashingAdapter.md#name)
 
 #### Defined in
 
-dist/cjs/adapters/sha512.d.ts:10
+dist/cjs/adapters/pbkdf2.d.ts:11
 
 ## Methods
 
@@ -103,7 +121,7 @@ dist/cjs/adapters/sha512.d.ts:10
 
 ▸ `Protected` **_hash**(`password`, `salt`): `Promise`<`Buffer`\>
 
-**`memberof`** SimpleHashHashingAdapter
+**`memberof`** PBKDF2HashingAdapter
 
 #### Parameters
 
@@ -118,13 +136,13 @@ dist/cjs/adapters/sha512.d.ts:10
 
 {Promise<Buffer>}
 
-#### Inherited from
+#### Overrides
 
-[SimpleHashHashingAdapter](index.SimpleHashHashingAdapter.md).[_hash](index.SimpleHashHashingAdapter.md#_hash)
+[BaseHashingAdapter](index._internal_.BaseHashingAdapter.md).[_hash](index._internal_.BaseHashingAdapter.md#_hash)
 
 #### Defined in
 
-dist/cjs/simple-hash.adapter.d.ts:23
+dist/cjs/adapters/pbkdf2.d.ts:24
 
 ___
 
@@ -150,7 +168,7 @@ ___
 
 #### Inherited from
 
-[SimpleHashHashingAdapter](index.SimpleHashHashingAdapter.md).[_verify](index.SimpleHashHashingAdapter.md#_verify)
+[BaseHashingAdapter](index._internal_.BaseHashingAdapter.md).[_verify](index._internal_.BaseHashingAdapter.md#_verify)
 
 #### Defined in
 
@@ -176,7 +194,7 @@ ___
 
 #### Inherited from
 
-[SimpleHashHashingAdapter](index.SimpleHashHashingAdapter.md).[hash](index.SimpleHashHashingAdapter.md#hash)
+[BaseHashingAdapter](index._internal_.BaseHashingAdapter.md).[hash](index._internal_.BaseHashingAdapter.md#hash)
 
 #### Defined in
 
@@ -204,7 +222,7 @@ ___
 
 #### Inherited from
 
-[SimpleHashHashingAdapter](index.SimpleHashHashingAdapter.md).[verify](index.SimpleHashHashingAdapter.md#verify)
+[BaseHashingAdapter](index._internal_.BaseHashingAdapter.md).[verify](index._internal_.BaseHashingAdapter.md#verify)
 
 #### Defined in
 

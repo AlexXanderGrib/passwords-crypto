@@ -4,12 +4,10 @@
 
 ## Table of contents
 
-### References
+### Namespaces
 
-- [Argon2dHashingAdapter](argon2d.md#argon2dhashingadapter)
+- [&lt;internal\&gt;](argon2d._internal_.md)
 
-## References
+### Classes
 
-### Argon2dHashingAdapter
-
-Re-exports [Argon2dHashingAdapter](../classes/index.Argon2dHashingAdapter.md)
+- [Argon2dHashingAdapter](../classes/argon2d.Argon2dHashingAdapter.md)

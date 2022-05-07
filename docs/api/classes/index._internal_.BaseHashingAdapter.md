@@ -12,15 +12,15 @@
 
 - **`BaseHashingAdapter`**
 
-  ↳ [`BCryptHashingAdapter`](index.BCryptHashingAdapter.md)
-
-  ↳ [`PBKDF2HashingAdapter`](index.PBKDF2HashingAdapter.md)
-
-  ↳ [`SCryptHashingAdapter`](index.SCryptHashingAdapter.md)
-
   ↳ [`SimpleHashHashingAdapter`](index.SimpleHashHashingAdapter.md)
 
-  ↳ [`Argon2HashingAdapter`](index._internal_.Argon2HashingAdapter.md)
+  ↳ [`BCryptHashingAdapter`](bcrypt.BCryptHashingAdapter.md)
+
+  ↳ [`PBKDF2HashingAdapter`](pbkdf2.PBKDF2HashingAdapter.md)
+
+  ↳ [`SCryptHashingAdapter`](scrypt.SCryptHashingAdapter.md)
+
+  ↳ [`Argon2HashingAdapter`](argon2d._internal_.Argon2HashingAdapter.md)
 
 ## Implements
 

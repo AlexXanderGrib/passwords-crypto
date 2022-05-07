@@ -4,12 +4,6 @@
 
 ## Table of contents
 
-### References
+### Classes
 
-- [SCryptHashingAdapter](scrypt.md#scrypthashingadapter)
-
-## References
-
-### SCryptHashingAdapter
-
-Re-exports [SCryptHashingAdapter](../classes/index.SCryptHashingAdapter.md)
+- [SCryptHashingAdapter](../classes/scrypt.SCryptHashingAdapter.md)

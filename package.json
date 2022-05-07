@@ -1,6 +1,6 @@
 {
-  "name": "crypt-pass",
-  "version": "1.0.0",
+  "name": "unpc",
+  "version": "1.0.1",
   "description": "⭐ Password hashing and verification library providing single interface for SHA256, SCrypt, BCrypt, Argon2 and PBKDF2 algorithms",
   "keywords": [
     "crypto",
@@ -16,7 +16,7 @@
     "nodejs",
     "typed",
     "typescript",
-    "backed"
+    "backend"
   ],
   "files": [
     "dist/",
@@ -50,7 +50,10 @@
     "sha256.d.ts",
     "sha512.js",
     "sha512.mjs",
-    "sha512.d.ts"
+    "sha512.d.ts",
+    "argon2.js",
+    "argon2.mjs",
+    "argon2.d.ts"
   ],
   "type": "commonjs",
   "main": "./index.js",
@@ -66,7 +69,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AlexXanderGrib/crypt-pass.git"
+    "url": "git+https://github.com/AlexXanderGrib/passwords-crypto.git"
   },
   "author": {
     "name": "Alexander Gribochkin",
@@ -83,10 +86,10 @@
   "license": "MIT",
   "private": false,
   "bugs": {
-    "url": "https://github.com/AlexXanderGrib/crypt-pass/issues",
+    "url": "https://github.com/AlexXanderGrib/passwords-crypto/issues",
     "email": "me@alexxgrib.me"
   },
-  "homepage": "https://github.com/AlexXanderGrib/crypt-pass#readme",
+  "homepage": "https://github.com/AlexXanderGrib/passwords-crypto#readme",
   "scripts": {
     "test": "jest",
     "build:dist": "rimraf dist && rollup -c && node ./scripts/exports.js",
@@ -147,6 +150,12 @@
       "import": "./index.mjs",
       "default": "./index.mjs",
       "types": "./index.d.ts"
+    },
+    "./argon2": {
+      "require": "./argon2.js",
+      "import": "./argon2.mjs",
+      "default": "./argon2.mjs",
+      "types": "./argon2.d.ts"
     },
     "./argon2d": {
       "require": "./argon2d.js",

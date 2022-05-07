@@ -3,6 +3,7 @@
   "out": "./docs/api",
   "entryPoints": [
     "./index.d.ts",
+    "./argon2.d.ts",
     "./argon2d.d.ts",
     "./argon2i.d.ts",
     "./argon2id.d.ts",

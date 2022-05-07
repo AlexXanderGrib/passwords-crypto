@@ -6,6 +6,7 @@
 
 ### Modules
 
+- [argon2](modules/argon2.md)
 - [argon2d](modules/argon2d.md)
 - [argon2i](modules/argon2i.md)
 - [argon2id](modules/argon2id.md)

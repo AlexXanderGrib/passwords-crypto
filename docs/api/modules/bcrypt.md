@@ -4,12 +4,6 @@
 
 ## Table of contents
 
-### References
+### Classes
 
-- [BCryptHashingAdapter](bcrypt.md#bcrypthashingadapter)
-
-## References
-
-### BCryptHashingAdapter
-
-Re-exports [BCryptHashingAdapter](../classes/index.BCryptHashingAdapter.md)
+- [BCryptHashingAdapter](../classes/bcrypt.BCryptHashingAdapter.md)

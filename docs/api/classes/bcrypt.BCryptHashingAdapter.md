@@ -1,8 +1,8 @@
-[Crypt Pass](../README.md) / [Modules](../modules.md) / [index](../modules/index.md) / BCryptHashingAdapter
+[Crypt Pass](../README.md) / [Modules](../modules.md) / [bcrypt](../modules/bcrypt.md) / BCryptHashingAdapter
 
 # Class: BCryptHashingAdapter
 
-[index](../modules/index.md).BCryptHashingAdapter
+[bcrypt](../modules/bcrypt.md).BCryptHashingAdapter
 
 **`export`**
 
@@ -16,20 +16,20 @@
 
 ### Constructors
 
-- [constructor](index.BCryptHashingAdapter.md#constructor)
+- [constructor](bcrypt.BCryptHashingAdapter.md#constructor)
 
 ### Properties
 
-- [\_options](index.BCryptHashingAdapter.md#_options)
-- [name](index.BCryptHashingAdapter.md#name)
-- [rounds](index.BCryptHashingAdapter.md#rounds)
+- [\_options](bcrypt.BCryptHashingAdapter.md#_options)
+- [name](bcrypt.BCryptHashingAdapter.md#name)
+- [rounds](bcrypt.BCryptHashingAdapter.md#rounds)
 
 ### Methods
 
-- [\_hash](index.BCryptHashingAdapter.md#_hash)
-- [\_verify](index.BCryptHashingAdapter.md#_verify)
-- [hash](index.BCryptHashingAdapter.md#hash)
-- [verify](index.BCryptHashingAdapter.md#verify)
+- [\_hash](bcrypt.BCryptHashingAdapter.md#_hash)
+- [\_verify](bcrypt.BCryptHashingAdapter.md#_verify)
+- [hash](bcrypt.BCryptHashingAdapter.md#hash)
+- [verify](bcrypt.BCryptHashingAdapter.md#verify)
 
 ## Constructors
 

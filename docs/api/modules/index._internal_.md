@@ -8,7 +8,6 @@
 
 ### Classes
 
-- [Argon2HashingAdapter](../classes/index._internal_.Argon2HashingAdapter.md)
 - [BaseHashingAdapter](../classes/index._internal_.BaseHashingAdapter.md)
 
 ### Type aliases

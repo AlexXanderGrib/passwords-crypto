@@ -1,50 +1,42 @@
-[Crypt Pass](../README.md) / [Modules](../modules.md) / [index](../modules/index.md) / [<internal\>](../modules/index._internal_.md) / Argon2HashingAdapter
+[Crypt Pass](../README.md) / [Modules](../modules.md) / [argon2d](../modules/argon2d.md) / Argon2dHashingAdapter
 
-# Class: Argon2HashingAdapter
+# Class: Argon2dHashingAdapter
 
-[index](../modules/index.md).[<internal>](../modules/index._internal_.md).Argon2HashingAdapter
+[argon2d](../modules/argon2d.md).Argon2dHashingAdapter
 
 **`export`**
 
-**`abstract`**
-
 ## Hierarchy
 
-- [`BaseHashingAdapter`](index._internal_.BaseHashingAdapter.md)
+- [`Argon2HashingAdapter`](argon2d._internal_.Argon2HashingAdapter.md)
 
-  ↳ **`Argon2HashingAdapter`**
-
-  ↳↳ [`Argon2dHashingAdapter`](index.Argon2dHashingAdapter.md)
-
-  ↳↳ [`Argon2iHashingAdapter`](index.Argon2iHashingAdapter.md)
-
-  ↳↳ [`Argon2idHashingAdapter`](index.Argon2idHashingAdapter.md)
+  ↳ **`Argon2dHashingAdapter`**
 
 ## Table of contents
 
 ### Constructors
 
-- [constructor](index._internal_.Argon2HashingAdapter.md#constructor)
+- [constructor](argon2d.Argon2dHashingAdapter.md#constructor)
 
 ### Properties
 
-- [\_options](index._internal_.Argon2HashingAdapter.md#_options)
-- [hashLength](index._internal_.Argon2HashingAdapter.md#hashlength)
-- [name](index._internal_.Argon2HashingAdapter.md#name)
-- [type](index._internal_.Argon2HashingAdapter.md#type)
+- [\_options](argon2d.Argon2dHashingAdapter.md#_options)
+- [hashLength](argon2d.Argon2dHashingAdapter.md#hashlength)
+- [name](argon2d.Argon2dHashingAdapter.md#name)
+- [type](argon2d.Argon2dHashingAdapter.md#type)
 
 ### Methods
 
-- [\_hash](index._internal_.Argon2HashingAdapter.md#_hash)
-- [\_verify](index._internal_.Argon2HashingAdapter.md#_verify)
-- [hash](index._internal_.Argon2HashingAdapter.md#hash)
-- [verify](index._internal_.Argon2HashingAdapter.md#verify)
+- [\_hash](argon2d.Argon2dHashingAdapter.md#_hash)
+- [\_verify](argon2d.Argon2dHashingAdapter.md#_verify)
+- [hash](argon2d.Argon2dHashingAdapter.md#hash)
+- [verify](argon2d.Argon2dHashingAdapter.md#verify)
 
 ## Constructors
 
 ### constructor
 
-• **new Argon2HashingAdapter**(`options?`)
+• **new Argon2dHashingAdapter**(`options?`)
 
 Creates an instance of BaseHashingAdapter.
 
@@ -58,7 +50,7 @@ Creates an instance of BaseHashingAdapter.
 
 #### Inherited from
 
-[BaseHashingAdapter](index._internal_.BaseHashingAdapter.md).[constructor](index._internal_.BaseHashingAdapter.md#constructor)
+[Argon2HashingAdapter](argon2d._internal_.Argon2HashingAdapter.md).[constructor](argon2d._internal_.Argon2HashingAdapter.md#constructor)
 
 #### Defined in
 
@@ -72,7 +64,7 @@ dist/cjs/adapter.d.ts:50
 
 #### Inherited from
 
-[BaseHashingAdapter](index._internal_.BaseHashingAdapter.md).[_options](index._internal_.BaseHashingAdapter.md#_options)
+[Argon2HashingAdapter](argon2d._internal_.Argon2HashingAdapter.md).[_options](argon2d._internal_.Argon2HashingAdapter.md#_options)
 
 #### Defined in
 
@@ -84,6 +76,10 @@ ___
 
 • `Readonly` **hashLength**: `number`
 
+#### Inherited from
+
+[Argon2HashingAdapter](argon2d._internal_.Argon2HashingAdapter.md).[hashLength](argon2d._internal_.Argon2HashingAdapter.md#hashlength)
+
 #### Defined in
 
 dist/cjs/argon2.adapter.d.ts:15
@@ -92,25 +88,29 @@ ___
 
 ### name
 
-• `Readonly` `Abstract` **name**: `string`
+• `Readonly` **name**: ``"argon2d"``
 
 #### Overrides
 
-[BaseHashingAdapter](index._internal_.BaseHashingAdapter.md).[name](index._internal_.BaseHashingAdapter.md#name)
+[Argon2HashingAdapter](argon2d._internal_.Argon2HashingAdapter.md).[name](argon2d._internal_.Argon2HashingAdapter.md#name)
 
 #### Defined in
 
-dist/cjs/argon2.adapter.d.ts:13
+dist/cjs/adapters/argon2d.d.ts:10
 
 ___
 
 ### type
 
-• `Readonly` `Abstract` **type**: `undefined` \| ``0`` \| ``1`` \| ``2``
+• `Readonly` **type**: ``0``
+
+#### Overrides
+
+[Argon2HashingAdapter](argon2d._internal_.Argon2HashingAdapter.md).[type](argon2d._internal_.Argon2HashingAdapter.md#type)
 
 #### Defined in
 
-dist/cjs/argon2.adapter.d.ts:14
+dist/cjs/adapters/argon2d.d.ts:11
 
 ## Methods
 
@@ -133,9 +133,9 @@ dist/cjs/argon2.adapter.d.ts:14
 
 {Promise<Buffer>}
 
-#### Overrides
+#### Inherited from
 
-[BaseHashingAdapter](index._internal_.BaseHashingAdapter.md).[_hash](index._internal_.BaseHashingAdapter.md#_hash)
+[Argon2HashingAdapter](argon2d._internal_.Argon2HashingAdapter.md).[_hash](argon2d._internal_.Argon2HashingAdapter.md#_hash)
 
 #### Defined in
 
@@ -163,9 +163,9 @@ ___
 
 {Promise<boolean>}
 
-#### Overrides
+#### Inherited from
 
-[BaseHashingAdapter](index._internal_.BaseHashingAdapter.md).[_verify](index._internal_.BaseHashingAdapter.md#_verify)
+[Argon2HashingAdapter](argon2d._internal_.Argon2HashingAdapter.md).[_verify](argon2d._internal_.Argon2HashingAdapter.md#_verify)
 
 #### Defined in
 
@@ -191,7 +191,7 @@ ___
 
 #### Inherited from
 
-[BaseHashingAdapter](index._internal_.BaseHashingAdapter.md).[hash](index._internal_.BaseHashingAdapter.md#hash)
+[Argon2HashingAdapter](argon2d._internal_.Argon2HashingAdapter.md).[hash](argon2d._internal_.Argon2HashingAdapter.md#hash)
 
 #### Defined in
 
@@ -219,7 +219,7 @@ ___
 
 #### Inherited from
 
-[BaseHashingAdapter](index._internal_.BaseHashingAdapter.md).[verify](index._internal_.BaseHashingAdapter.md#verify)
+[Argon2HashingAdapter](argon2d._internal_.Argon2HashingAdapter.md).[verify](argon2d._internal_.Argon2HashingAdapter.md#verify)
 
 #### Defined in
 
