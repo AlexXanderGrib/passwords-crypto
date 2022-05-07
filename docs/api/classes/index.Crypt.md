@@ -177,7 +177,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `adapterClass` | [`AdapterClass`](../modules/index._internal_.md#adapterclass) |
+| `adapterClass` | [`AdapterClass`](../modules/index.md#adapterclass) |
 
 #### Returns
 

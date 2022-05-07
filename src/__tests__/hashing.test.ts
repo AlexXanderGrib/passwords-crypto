@@ -8,7 +8,7 @@ import { PBKDF2HashingAdapter } from "../adapters/pbkdf2";
 import { SCryptHashingAdapter } from "../adapters/scrypt";
 import { Sha256HashingAdapter } from "../adapters/sha256";
 import { Sha512HashingAdapter } from "../adapters/sha512";
-import { encode } from "../digest";
+import { encode, Encoding } from "../digest";
 
 const adapters = [
   new Argon2dHashingAdapter(),
@@ -61,7 +61,10 @@ describe("Hashing", () => {
       const hash =
         hashName +
         instanceDefaults.algorithmSeparatorChar +
-        encode(instanceDefaults.encoding, randomBytes(PASSWORD_BYTES_SIZE));
+        encode(
+          instanceDefaults.encoding as Encoding,
+          randomBytes(PASSWORD_BYTES_SIZE)
+        );
 
       await adapter.verify({ hash, password: "" });
 

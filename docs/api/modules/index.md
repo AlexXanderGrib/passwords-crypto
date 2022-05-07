@@ -11,6 +11,7 @@
 ### Classes
 
 - [AlgorithmsMismatchError](../classes/index.AlgorithmsMismatchError.md)
+- [BaseHashingAdapter](../classes/index.BaseHashingAdapter.md)
 - [Crypt](../classes/index.Crypt.md)
 - [HashingAdapterNotFoundError](../classes/index.HashingAdapterNotFoundError.md)
 - [HashingAdapterRegisteredError](../classes/index.HashingAdapterRegisteredError.md)
@@ -25,9 +26,33 @@
 - [InstanceOptions](../interfaces/index.InstanceOptions.md)
 - [VerificationOptions](../interfaces/index.VerificationOptions.md)
 
+### Type aliases
+
+- [AdapterClass](index.md#adapterclass)
+
 ### Variables
 
 - [instanceDefaults](index.md#instancedefaults)
+
+## Type aliases
+
+### AdapterClass
+
+Ƭ **AdapterClass**: (`options`: [`InstanceOptions`](../interfaces/index.InstanceOptions.md)) => [`HashingAdapter`](../interfaces/index.HashingAdapter.md)
+
+#### Type declaration
+
+• (`options`)
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `options` | [`InstanceOptions`](../interfaces/index.InstanceOptions.md) |
+
+#### Defined in
+
+dist/cjs/adapter.d.ts:9
 
 ## Variables
 

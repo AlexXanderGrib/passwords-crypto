@@ -10,7 +10,10 @@ import {
 describe(Crypt.name, () => {
   const crypt = new Crypt({
     default: "argon2i",
-    adapters: [Argon2iHashingAdapter]
+    adapters: [Argon2iHashingAdapter],
+    options: {
+      encoding: () => "hex"
+    }
   });
 
   test(".adapterNames", () => {

@@ -56,7 +56,7 @@ Creates an instance of BaseHashingAdapter.
 
 #### Defined in
 
-dist/cjs/adapter.d.ts:50
+dist/cjs/adapter.d.ts:43
 
 ## Properties
 
@@ -70,7 +70,7 @@ dist/cjs/adapter.d.ts:50
 
 #### Defined in
 
-dist/cjs/adapter.d.ts:43
+dist/cjs/adapter.d.ts:36
 
 ___
 
@@ -197,7 +197,7 @@ ___
 
 #### Defined in
 
-dist/cjs/adapter.d.ts:57
+dist/cjs/adapter.d.ts:50
 
 ___
 
@@ -225,4 +225,4 @@ ___
 
 #### Defined in
 
-dist/cjs/adapter.d.ts:65
+dist/cjs/adapter.d.ts:58

@@ -158,7 +158,17 @@ export class Crypt {
     password: string,
     options: CryptHashingOptions = {}
   ): Promise<boolean> {
-    const adapter = this._getAdapter(options.adapter ?? this.defaultAdapter);
+    let adapterName = options.adapter ?? this.defaultAdapter;
+
+    if (
+      this.instanceOptions.includeAlgorithm &&
+      this.instanceOptions.algorithmSeparatorChar &&
+      hash.includes(this.instanceOptions.algorithmSeparatorChar)
+    ) {
+      adapterName = hash.split(this.instanceOptions.algorithmSeparatorChar)[0];
+    }
+
+    const adapter = this._getAdapter(adapterName);
     return await adapter.verify({ password, salt: options.salt, hash });
   }
 }

@@ -40,7 +40,7 @@ ___
 
 ### encoding
 
-• `Optional` **encoding**: [`Encoding`](../modules/index._internal_.md#encoding)
+• `Optional` **encoding**: [`Encoding`](../modules/index._internal_.md#encoding) \| (`hashingAlgorithm`: `string`) => [`Encoding`](../modules/index._internal_.md#encoding)
 
 #### Inherited from
 

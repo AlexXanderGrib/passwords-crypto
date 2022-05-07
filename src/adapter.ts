@@ -49,13 +49,29 @@ export class AlgorithmsMismatchError extends Error {
  * @param {HashingOptions} options
  * @return {Buffer} {Buffer}
  */
-export function createSalt(options: HashingOptions): Buffer | undefined {
+function createSalt(options: HashingOptions): Buffer | undefined {
   if (!options.pepper && !options.salt) return;
 
   return Buffer.concat([
     binaryLikeToBuffer(options.pepper ?? ""),
     binaryLikeToBuffer(options.salt ?? "")
   ]);
+}
+
+/**
+ *
+ *
+ * @param {string} algorithmName
+ * @param {string|Function} encoding
+ * @return {*}
+ */
+function resolveEncoding(
+  algorithmName: string,
+  encoding: Required<InstanceOptions>["encoding"]
+) {
+  if (typeof encoding === "string") return encoding;
+
+  return encoding(algorithmName);
 }
 
 /**
@@ -91,7 +107,10 @@ export abstract class BaseHashingAdapter implements HashingAdapter {
       createSalt(mergedOptions)
     );
 
-    const hash = encode(mergedOptions.encoding, hashBuffer);
+    const hash = encode(
+      resolveEncoding(this.name, mergedOptions.encoding),
+      hashBuffer
+    );
     if (!mergedOptions.includeAlgorithm) return hash;
 
     return this.name + mergedOptions.algorithmSeparatorChar + hash;
@@ -121,7 +140,10 @@ export abstract class BaseHashingAdapter implements HashingAdapter {
       hashString = hashParts.join(mergedOptions.algorithmSeparatorChar);
     }
 
-    const hashBuffer = decode(mergedOptions.encoding, hashString);
+    const hashBuffer = decode(
+      resolveEncoding(this.name, mergedOptions.encoding),
+      hashString
+    );
 
     return await this._verify(
       binaryLikeToBuffer(mergedOptions.password),

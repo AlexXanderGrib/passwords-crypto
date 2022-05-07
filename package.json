@@ -1,7 +1,7 @@
 {
   "name": "unpc",
-  "version": "1.0.1",
-  "description": "⭐ Password hashing and verification library providing single interface for SHA256, SCrypt, BCrypt, Argon2 and PBKDF2 algorithms",
+  "version": "1.1.0",
+  "description": "🔒 Password hashing and verification library providing single interface for SHA256, SCrypt, BCrypt, Argon2 and PBKDF2 algorithms",
   "keywords": [
     "crypto",
     "hashing",

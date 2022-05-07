@@ -1,6 +1,6 @@
 # Universal NodeJS Passwords Crypto
 
-> Password hashing and verification library providing single interface for SHA256, SCrypt, BCrypt, Argon2 and PBKDF2 algorithms
+> 🔒 Password hashing and verification library providing single interface for `SHA256`, `SCrypt`, `BCrypt`, `Argon2` and `PBKDF2` algorithms
 
 [![Test Status](https://github.com/AlexXanderGrib/passwords-crypto/actions/workflows/test.yml/badge.svg)](https://github.com/AlexXanderGrib/passwords-crypto)
 [![Downloads](https://img.shields.io/npm/dt/unpc.svg)](https://npmjs.com/package/unpc)
@@ -14,13 +14,13 @@
 [![license MIT](https://img.shields.io/npm/l/unpc.svg)](https://github.com/AlexXanderGrib/passwords-crypto/blob/main/LICENSE.txt)
 [![Size](https://img.shields.io/bundlephobia/minzip/unpc)](https://bundlephobia.com/package/unpc)
 
-## Why use this lib?
+## 🍬 Why use this lib?
 
 - **Secure.** Library has only 2 dependencies and is constantly being scanned by Snyk & Code QL for vulnerabilities.
 - **Simple.** Standardized api allows to do hashing, salting, peppering and verification with just 2 methods
 - **Modular.** Every supported hashing algorithm is a simple class, that can be imported and used independently.
 
-## Installation
+## 📦 Installation
 
 - Using `npm`:
   ```bash
@@ -35,7 +35,10 @@
   pnpm add unpc
   ```
 
-### Additional libraries
+### 🚚 Additional libraries
+
+To support best hashing algorithms `unpc` needs third party libraries
+with C bindings
 
 #### Argon2
 
@@ -55,7 +58,7 @@ and `bcrypt` adapter, you need to install package `bcrypt`
 npm i bcrypt
 ```
 
-## Examples
+## 🛠️ Examples
 
 ### Basic
 
@@ -66,7 +69,7 @@ import { Argon2iHashingAdapter } from "unpc/argon2i";
 const crypt = new Crypt({
   default: "argon2i",
   adapters: [Argon2iHashingAdapter],
-  options: { encoding:I"hex" }
+  options: { encoding: "hex" }
 });
 
 const secret = "Hello world!";
@@ -79,14 +82,18 @@ const isCorrect = await crypt.verify(hash, secret);
 console.log(isCorrect); // true
 ```
 
+### Full examples
+
+1. [Basic](./examples/1-base.mjs)
+1. [With custom hashing adapter](./examples/2-custom.js)
+
 ## Adapters
 
-| Path                    | Adapter class name         | Algorithm | Requirements                               |
-| ----------------------- | -------------------------- | --------- | ------------------------------------------ |
+| Path              | Adapter class name         | Algorithm | Requirements                               |
+| ----------------- | -------------------------- | --------- | ------------------------------------------ |
 | `unpc/argon2`     | `Argon2HashingAdapter`     | Argon2-i  | Package `argon2`                           |
 | `unpc/argon2d`    | `Argon2dHashingAdapter`    | Argon2-d  | Package `argon2`                           |
 | `unpc/argon2i`    | `Argon2iHashingAdapter`    | Argon2-i  | Package `argon2`                           |
-| `unpc/argon2id`   | `Argon2idHashingAdapter`   | Argon2-id | Package `argon2`                           |
 | `unpc/argon2id`   | `Argon2idHashingAdapter`   | Argon2-id | Package `argon2`                           |
 | `unpc/bcrypt`     | `BCryptHashingAdapter`     | Bcrypt    | Package `bcrypt`                           |
 | `unpc/pbkdf2`     | `PBKDF2HashingAdapter`     | PBKDF2    | Node > `v0.5.5`                            |

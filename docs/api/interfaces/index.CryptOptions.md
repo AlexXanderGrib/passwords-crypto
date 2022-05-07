@@ -16,7 +16,7 @@
 
 ### adapters
 
-• **adapters**: [`AdapterClass`](../modules/index._internal_.md#adapterclass)[]
+• **adapters**: [`AdapterClass`](../modules/index.md#adapterclass)[]
 
 #### Defined in
 

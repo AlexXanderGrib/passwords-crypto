@@ -3,7 +3,7 @@ import type { Encoding } from "./digest";
 
 export interface InstanceOptions {
   pepper?: BinaryLike;
-  encoding?: Encoding;
+  encoding?: Encoding | ((hashingAlgorithm: string) => Encoding);
   includeAlgorithm?: boolean;
   algorithmSeparatorChar?: string;
 }

@@ -6,7 +6,7 @@
 
 ## Implemented by
 
-- [`BaseHashingAdapter`](../classes/index._internal_.BaseHashingAdapter.md)
+- [`BaseHashingAdapter`](../classes/index.BaseHashingAdapter.md)
 
 ## Table of contents
 

@@ -4,5 +4,7 @@ export { SimpleHashHashingAdapter } from "./simple-hash.adapter";
 export {
   AlgorithmsMismatchError,
   HashingAdapter,
-  instanceDefaults
+  instanceDefaults,
+  AdapterClass,
+  BaseHashingAdapter
 } from "./adapter";

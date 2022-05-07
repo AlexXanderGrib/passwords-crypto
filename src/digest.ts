@@ -23,23 +23,26 @@ interface EncoderDecoder {
   decode(string: string): Buffer;
 }
 
+/**
+ *
+ *
+ * @param {BufferEncoding} encoding
+ * @return {EncoderDecoder}  {EncoderDecoder}
+ */
+function bufferInternalEncoder(encoding: BufferEncoding): EncoderDecoder {
+  return {
+    encode(buffer) {
+      return buffer.toString(encoding);
+    },
+    decode(string) {
+      return Buffer.from(string, encoding);
+    }
+  };
+}
+
 const encoders: Record<Encoding, EncoderDecoder> = {
-  base64: {
-    encode(buffer) {
-      return buffer.toString("base64");
-    },
-    decode(string) {
-      return Buffer.from(string, "base64");
-    }
-  },
-  hex: {
-    encode(buffer) {
-      return buffer.toString("hex");
-    },
-    decode(string) {
-      return Buffer.from(string, "hex");
-    }
-  },
+  base64: bufferInternalEncoder("base64"),
+  hex: bufferInternalEncoder("hex"),
   "safe-base64": {
     encode(buffer) {
       return buffer

@@ -1,8 +1,8 @@
-[Crypt Pass](../README.md) / [Modules](../modules.md) / [index](../modules/index.md) / [<internal\>](../modules/index._internal_.md) / BaseHashingAdapter
+[Crypt Pass](../README.md) / [Modules](../modules.md) / [index](../modules/index.md) / BaseHashingAdapter
 
 # Class: BaseHashingAdapter
 
-[index](../modules/index.md).[<internal>](../modules/index._internal_.md).BaseHashingAdapter
+[index](../modules/index.md).BaseHashingAdapter
 
 **`export`**
 
@@ -30,19 +30,19 @@
 
 ### Constructors
 
-- [constructor](index._internal_.BaseHashingAdapter.md#constructor)
+- [constructor](index.BaseHashingAdapter.md#constructor)
 
 ### Properties
 
-- [\_options](index._internal_.BaseHashingAdapter.md#_options)
-- [name](index._internal_.BaseHashingAdapter.md#name)
+- [\_options](index.BaseHashingAdapter.md#_options)
+- [name](index.BaseHashingAdapter.md#name)
 
 ### Methods
 
-- [\_hash](index._internal_.BaseHashingAdapter.md#_hash)
-- [\_verify](index._internal_.BaseHashingAdapter.md#_verify)
-- [hash](index._internal_.BaseHashingAdapter.md#hash)
-- [verify](index._internal_.BaseHashingAdapter.md#verify)
+- [\_hash](index.BaseHashingAdapter.md#_hash)
+- [\_verify](index.BaseHashingAdapter.md#_verify)
+- [hash](index.BaseHashingAdapter.md#hash)
+- [verify](index.BaseHashingAdapter.md#verify)
 
 ## Constructors
 
@@ -62,7 +62,7 @@ Creates an instance of BaseHashingAdapter.
 
 #### Defined in
 
-dist/cjs/adapter.d.ts:50
+dist/cjs/adapter.d.ts:43
 
 ## Properties
 
@@ -72,7 +72,7 @@ dist/cjs/adapter.d.ts:50
 
 #### Defined in
 
-dist/cjs/adapter.d.ts:43
+dist/cjs/adapter.d.ts:36
 
 ___
 
@@ -86,7 +86,7 @@ ___
 
 #### Defined in
 
-dist/cjs/adapter.d.ts:44
+dist/cjs/adapter.d.ts:37
 
 ## Methods
 
@@ -107,7 +107,7 @@ dist/cjs/adapter.d.ts:44
 
 #### Defined in
 
-dist/cjs/adapter.d.ts:66
+dist/cjs/adapter.d.ts:59
 
 ___
 
@@ -133,7 +133,7 @@ ___
 
 #### Defined in
 
-dist/cjs/adapter.d.ts:77
+dist/cjs/adapter.d.ts:70
 
 ___
 
@@ -159,7 +159,7 @@ ___
 
 #### Defined in
 
-dist/cjs/adapter.d.ts:57
+dist/cjs/adapter.d.ts:50
 
 ___
 
@@ -187,4 +187,4 @@ ___
 
 #### Defined in
 
-dist/cjs/adapter.d.ts:65
+dist/cjs/adapter.d.ts:58

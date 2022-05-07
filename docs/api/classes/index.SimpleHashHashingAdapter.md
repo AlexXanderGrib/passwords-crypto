@@ -10,7 +10,7 @@
 
 ## Hierarchy
 
-- [`BaseHashingAdapter`](index._internal_.BaseHashingAdapter.md)
+- [`BaseHashingAdapter`](index.BaseHashingAdapter.md)
 
   ↳ **`SimpleHashHashingAdapter`**
 
@@ -55,11 +55,11 @@ Creates an instance of BaseHashingAdapter.
 
 #### Inherited from
 
-[BaseHashingAdapter](index._internal_.BaseHashingAdapter.md).[constructor](index._internal_.BaseHashingAdapter.md#constructor)
+[BaseHashingAdapter](index.BaseHashingAdapter.md).[constructor](index.BaseHashingAdapter.md#constructor)
 
 #### Defined in
 
-dist/cjs/adapter.d.ts:50
+dist/cjs/adapter.d.ts:43
 
 ## Properties
 
@@ -69,11 +69,11 @@ dist/cjs/adapter.d.ts:50
 
 #### Inherited from
 
-[BaseHashingAdapter](index._internal_.BaseHashingAdapter.md).[_options](index._internal_.BaseHashingAdapter.md#_options)
+[BaseHashingAdapter](index.BaseHashingAdapter.md).[_options](index.BaseHashingAdapter.md#_options)
 
 #### Defined in
 
-dist/cjs/adapter.d.ts:43
+dist/cjs/adapter.d.ts:36
 
 ___
 
@@ -93,7 +93,7 @@ ___
 
 #### Overrides
 
-[BaseHashingAdapter](index._internal_.BaseHashingAdapter.md).[name](index._internal_.BaseHashingAdapter.md#name)
+[BaseHashingAdapter](index.BaseHashingAdapter.md).[name](index.BaseHashingAdapter.md#name)
 
 #### Defined in
 
@@ -122,7 +122,7 @@ dist/cjs/simple-hash.adapter.d.ts:12
 
 #### Overrides
 
-[BaseHashingAdapter](index._internal_.BaseHashingAdapter.md).[_hash](index._internal_.BaseHashingAdapter.md#_hash)
+[BaseHashingAdapter](index.BaseHashingAdapter.md).[_hash](index.BaseHashingAdapter.md#_hash)
 
 #### Defined in
 
@@ -152,11 +152,11 @@ ___
 
 #### Inherited from
 
-[BaseHashingAdapter](index._internal_.BaseHashingAdapter.md).[_verify](index._internal_.BaseHashingAdapter.md#_verify)
+[BaseHashingAdapter](index.BaseHashingAdapter.md).[_verify](index.BaseHashingAdapter.md#_verify)
 
 #### Defined in
 
-dist/cjs/adapter.d.ts:77
+dist/cjs/adapter.d.ts:70
 
 ___
 
@@ -178,11 +178,11 @@ ___
 
 #### Inherited from
 
-[BaseHashingAdapter](index._internal_.BaseHashingAdapter.md).[hash](index._internal_.BaseHashingAdapter.md#hash)
+[BaseHashingAdapter](index.BaseHashingAdapter.md).[hash](index.BaseHashingAdapter.md#hash)
 
 #### Defined in
 
-dist/cjs/adapter.d.ts:57
+dist/cjs/adapter.d.ts:50
 
 ___
 
@@ -206,8 +206,8 @@ ___
 
 #### Inherited from
 
-[BaseHashingAdapter](index._internal_.BaseHashingAdapter.md).[verify](index._internal_.BaseHashingAdapter.md#verify)
+[BaseHashingAdapter](index.BaseHashingAdapter.md).[verify](index.BaseHashingAdapter.md#verify)
 
 #### Defined in
 
-dist/cjs/adapter.d.ts:65
+dist/cjs/adapter.d.ts:58
