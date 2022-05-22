@@ -1,6 +1,6 @@
 {
   "name": "unpc",
-  "version": "1.1.0",
+  "version": "1.1.2",
   "description": "🔒 Password hashing and verification library providing single interface for SHA256, SCrypt, BCrypt, Argon2 and PBKDF2 algorithms",
   "keywords": [
     "crypto",
@@ -27,6 +27,9 @@
     "README.md",
     "LICENSE.txt",
     "SECURITY.md",
+    "index.js",
+    "index.mjs",
+    "index.d.ts",
     "argon2d.js",
     "argon2d.mjs",
     "argon2d.d.ts",

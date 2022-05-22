@@ -4,6 +4,12 @@
 
 [index](../modules/index.md).CryptHashingOptions
 
+## Hierarchy
+
+- **`CryptHashingOptions`**
+
+  ↳ [`CryptoVerifyingOptions`](index.CryptoVerifyingOptions.md)
+
 ## Table of contents
 
 ### Properties

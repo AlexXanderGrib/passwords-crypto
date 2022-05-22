@@ -21,6 +21,7 @@
 
 - [CryptHashingOptions](../interfaces/index.CryptHashingOptions.md)
 - [CryptOptions](../interfaces/index.CryptOptions.md)
+- [CryptoVerifyingOptions](../interfaces/index.CryptoVerifyingOptions.md)
 - [HashingAdapter](../interfaces/index.HashingAdapter.md)
 - [HashingOptions](../interfaces/index.HashingOptions.md)
 - [InstanceOptions](../interfaces/index.InstanceOptions.md)

@@ -1,5 +1,5 @@
 import type { BinaryLike } from "crypto";
-import type { AdapterClass, HashingAdapter } from "./adapter";
+import { AdapterClass, HashingAdapter, instanceDefaults } from "./adapter";
 import type { InstanceOptions } from "./options";
 
 export interface CryptOptions {
@@ -49,6 +49,10 @@ export interface CryptHashingOptions {
   salt?: BinaryLike;
 }
 
+export interface CryptoVerifyingOptions extends CryptHashingOptions {
+  detectHash?: boolean;
+}
+
 /**
  *
  *
@@ -59,6 +63,28 @@ export class Crypt {
   public readonly instanceOptions: InstanceOptions;
   public readonly defaultAdapter: string;
   private readonly _registry = new Map<string, HashingAdapter>();
+
+  /**
+   *
+   *
+   * @static
+   * @param {AdapterClass} adapter
+   * @param {InstanceOptions} [options]
+   * @return {Crypt}
+   * @memberof Crypt
+   */
+  static withSingleAdapter(
+    adapter: AdapterClass,
+    options: InstanceOptions = {}
+  ): Crypt {
+    const instance = new adapter(options);
+
+    return new this({
+      default: instance.name,
+      adapters: [adapter],
+      options
+    });
+  }
 
   /**
    * Creates an instance of Crypt.
@@ -156,17 +182,32 @@ export class Crypt {
   async verify(
     hash: string,
     password: string,
-    options: CryptHashingOptions = {}
+    options: CryptoVerifyingOptions = {}
   ): Promise<boolean> {
     let adapterName = options.adapter ?? this.defaultAdapter;
+    options.detectHash = !!options.adapter;
+
+    const { algorithmSeparatorChar: separator, includeAlgorithm } = {
+      ...instanceDefaults,
+      ...this.instanceOptions
+    };
 
     if (
-      this.instanceOptions.includeAlgorithm &&
-      this.instanceOptions.algorithmSeparatorChar &&
-      hash.includes(this.instanceOptions.algorithmSeparatorChar)
+      includeAlgorithm &&
+      separator &&
+      options.detectHash &&
+      hash.includes(separator)
     ) {
-      adapterName = hash.split(this.instanceOptions.algorithmSeparatorChar)[0];
+      adapterName = hash.split(separator)[0];
     }
+
+    console.log({
+      adapterName,
+      hash,
+      options: this.instanceOptions,
+      includes: hash.includes(separator),
+      hashStart: hash.split(separator)[0]
+    });
 
     const adapter = this._getAdapter(adapterName);
     return await adapter.verify({ password, salt: options.salt, hash });

@@ -102,3 +102,9 @@ console.log(isCorrect); // true
 | `unpc/scrypt`     | `SCryptHashingAdapter`     | Scrypt    | Node > `v10.5.0`                           |
 | ~~`unpc/sha256`~~ | ~~`Sha256HashingAdapter`~~ | SHA-256   | Being brave enough to use it. **Insecure** |
 | ~~`unpc/sha512`~~ | ~~`Sha512HashingAdapter`~~ | SHA-512   | Being brave enough to use it. **Insecure** |
+
+## License 
+
+Distributed under the MIT License. See [LICENSE.txt](./LICENSE.txt) for more information.
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FAlexXanderGrib%2Fpasswords-crypto.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FAlexXanderGrib%2Fpasswords-crypto?ref=badge_large)

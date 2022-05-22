@@ -29,6 +29,7 @@
 - [hash](index.Crypt.md#hash)
 - [register](index.Crypt.md#register)
 - [verify](index.Crypt.md#verify)
+- [withSingleAdapter](index.Crypt.md#withsingleadapter)
 
 ## Constructors
 
@@ -48,7 +49,7 @@ Creates an instance of Crypt.
 
 #### Defined in
 
-dist/cjs/crypt.d.ts:61
+dist/cjs/crypt.d.ts:74
 
 ## Properties
 
@@ -58,7 +59,7 @@ dist/cjs/crypt.d.ts:61
 
 #### Defined in
 
-dist/cjs/crypt.d.ts:55
+dist/cjs/crypt.d.ts:58
 
 ___
 
@@ -68,7 +69,7 @@ ___
 
 #### Defined in
 
-dist/cjs/crypt.d.ts:54
+dist/cjs/crypt.d.ts:57
 
 ___
 
@@ -78,7 +79,7 @@ ___
 
 #### Defined in
 
-dist/cjs/crypt.d.ts:53
+dist/cjs/crypt.d.ts:56
 
 ## Accessors
 
@@ -96,7 +97,7 @@ dist/cjs/crypt.d.ts:53
 
 #### Defined in
 
-dist/cjs/crypt.d.ts:75
+dist/cjs/crypt.d.ts:88
 
 ___
 
@@ -114,7 +115,7 @@ ___
 
 #### Defined in
 
-dist/cjs/crypt.d.ts:68
+dist/cjs/crypt.d.ts:81
 
 ## Methods
 
@@ -138,7 +139,7 @@ dist/cjs/crypt.d.ts:68
 
 #### Defined in
 
-dist/cjs/crypt.d.ts:92
+dist/cjs/crypt.d.ts:105
 
 ___
 
@@ -163,7 +164,7 @@ ___
 
 #### Defined in
 
-dist/cjs/crypt.d.ts:101
+dist/cjs/crypt.d.ts:114
 
 ___
 
@@ -187,7 +188,7 @@ ___
 
 #### Defined in
 
-dist/cjs/crypt.d.ts:83
+dist/cjs/crypt.d.ts:96
 
 ___
 
@@ -203,7 +204,7 @@ ___
 | :------ | :------ |
 | `hash` | `string` |
 | `password` | `string` |
-| `options?` | [`CryptHashingOptions`](../interfaces/index.CryptHashingOptions.md) |
+| `options?` | [`CryptoVerifyingOptions`](../interfaces/index.CryptoVerifyingOptions.md) |
 
 #### Returns
 
@@ -213,4 +214,29 @@ ___
 
 #### Defined in
 
-dist/cjs/crypt.d.ts:111
+dist/cjs/crypt.d.ts:124
+
+___
+
+### withSingleAdapter
+
+▸ `Static` **withSingleAdapter**(`adapter`, `options?`): [`Crypt`](index.Crypt.md)
+
+**`static`**
+
+**`memberof`** Crypt
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `adapter` | [`AdapterClass`](../modules/index.md#adapterclass) |
+| `options?` | [`InstanceOptions`](../interfaces/index.InstanceOptions.md) |
+
+#### Returns
+
+[`Crypt`](index.Crypt.md)
+
+#### Defined in
+
+dist/cjs/crypt.d.ts:68

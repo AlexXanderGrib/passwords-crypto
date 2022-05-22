@@ -8,12 +8,8 @@ import {
 } from "../crypt";
 
 describe(Crypt.name, () => {
-  const crypt = new Crypt({
-    default: "argon2i",
-    adapters: [Argon2iHashingAdapter],
-    options: {
-      encoding: () => "hex"
-    }
+  const crypt = Crypt.withSingleAdapter(Argon2iHashingAdapter, {
+    encoding: () => "hex"
   });
 
   test(".adapterNames", () => {
@@ -36,6 +32,15 @@ describe(Crypt.name, () => {
 
     expect(await crypt.verify(hash, original)).toBeTruthy();
     expect(await crypt.verify(hash2, original)).toBeFalsy();
+
+    try {
+      crypt.register(Argon2dHashingAdapter);
+    } catch {
+      void 0;
+    } finally {
+      const hash = await crypt.hash(original, { adapter: "argon2d" });
+      expect(await crypt.verify(hash, original)).toBeTruthy();
+    }
   });
 
   test("Unknown adapter", async () => {
