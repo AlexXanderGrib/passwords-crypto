@@ -201,14 +201,6 @@ export class Crypt {
       adapterName = hash.split(separator)[0];
     }
 
-    console.log({
-      adapterName,
-      hash,
-      options: this.instanceOptions,
-      includes: hash.includes(separator),
-      hashStart: hash.split(separator)[0]
-    });
-
     const adapter = this._getAdapter(adapterName);
     return await adapter.verify({ password, salt: options.salt, hash });
   }

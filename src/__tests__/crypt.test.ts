@@ -38,7 +38,7 @@ describe(Crypt.name, () => {
     } catch {
       void 0;
     } finally {
-      const hash = await crypt.hash(original, { adapter: "argon2d" });
+      const hash = await crypt.hash(original, { adapter: "argon2i" });
       expect(await crypt.verify(hash, original)).toBeTruthy();
     }
   });

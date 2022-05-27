@@ -13,6 +13,7 @@
 [![npm](https://img.shields.io/npm/v/unpc.svg)](https://npmjs.com/package/unpc)
 [![license MIT](https://img.shields.io/npm/l/unpc.svg)](https://github.com/AlexXanderGrib/passwords-crypto/blob/main/LICENSE.txt)
 [![Size](https://img.shields.io/bundlephobia/minzip/unpc)](https://bundlephobia.com/package/unpc)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/9f36664447bf472f95f1ee54b58b3f1f)](https://www.codacy.com/gh/AlexXanderGrib/passwords-crypto/dashboard?utm_source=github.com&utm_medium=referral&utm_content=AlexXanderGrib/passwords-crypto&utm_campaign=Badge_Grade)
 
 ## 🍬 Why use this lib?
 
@@ -101,8 +102,7 @@ console.log(isCorrect); // true
 | ~~`unpc/sha256`~~ | ~~`Sha256HashingAdapter`~~ | SHA-256   | Being brave enough to use it. **Insecure** |
 | ~~`unpc/sha512`~~ | ~~`Sha512HashingAdapter`~~ | SHA-512   | Being brave enough to use it. **Insecure** |
 
-
-## License 
+## License
 
 Distributed under the MIT License. See [LICENSE.txt](./LICENSE.txt) for more information.
 
