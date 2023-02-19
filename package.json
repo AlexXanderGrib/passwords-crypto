@@ -1,6 +1,6 @@
 {
   "name": "unpc",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "description": "🔒 Password hashing and verification library providing single interface for SHA256, SCrypt, BCrypt, Argon2 and PBKDF2 algorithms",
   "keywords": [
     "crypto",
@@ -87,7 +87,6 @@
     }
   ],
   "license": "MIT",
-  "private": false,
   "bugs": {
     "url": "https://github.com/AlexXanderGrib/passwords-crypto/issues",
     "email": "me@alexxgrib.me"
@@ -106,8 +105,8 @@
     "prettify": "prettier --write src/**/*"
   },
   "optionalDependencies": {
-    "argon2": "^0.28.5",
-    "bcrypt": "^5.0.1"
+    "argon2": "^0.30.3",
+    "bcrypt": "^5.1.0"
   },
   "devDependencies": {
     "@rollup/plugin-replace": "^4.0.0",
@@ -117,29 +116,29 @@
     "@types/uuid": "^8.3.4",
     "@typescript-eslint/eslint-plugin": "^5.21.0",
     "@typescript-eslint/parser": "^5.21.0",
-    "eslint": "^8.14.0",
+    "eslint": "^8.34.0",
     "eslint-config-google": "^0.14.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-promise": "^6.0.0",
-    "eslint-plugin-security": "^1.5.0",
-    "eslint-plugin-unicorn": "^42.0.0",
-    "glob": "^8.0.1",
-    "husky": "^7.0.4",
-    "jest": "^27.1.4",
-    "prettier": "^2.6.2",
-    "rimraf": "^3.0.2",
-    "rollup": "^2.70.2",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-security": "^1.7.1",
+    "eslint-plugin-unicorn": "^45.0.2",
+    "glob": "^8.1.0",
+    "husky": "^8.0.3",
+    "jest": "^29.4.3",
+    "prettier": "^2.8.4",
+    "rimraf": "^4.1.2",
+    "rollup": "^3.17.1",
     "rollup-plugin-cleanup": "^3.2.1",
-    "rollup-plugin-prettier": "^2.2.2",
-    "rollup-plugin-typescript2": "^0.31.2",
-    "ts-jest": "^27.1.4",
-    "ts-node": "^10.7.0",
-    "typedoc": "^0.22.15",
-    "typedoc-plugin-markdown": "^3.12.1",
-    "typedoc-plugin-missing-exports": "^0.22.6",
-    "typescript": "^4.6.4"
+    "rollup-plugin-prettier": "^3.0.0",
+    "rollup-plugin-typescript2": "^0.34.1",
+    "ts-jest": "^29.0.5",
+    "ts-node": "^10.9.1",
+    "typedoc": "^0.23.25",
+    "typedoc-plugin-markdown": "^3.14.0",
+    "typedoc-plugin-missing-exports": "^1.0.0",
+    "typescript": "^4.9.5"
   },
   "husky": {
     "hooks": {

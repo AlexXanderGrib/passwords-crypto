@@ -4,9 +4,9 @@
 
 [index](../modules/index.md).SimpleHashHashingAdapter
 
-**`export`**
+**`Export`**
 
-**`abstract`**
+**`Abstract`**
 
 ## Hierarchy
 
@@ -45,7 +45,9 @@
 
 Creates an instance of BaseHashingAdapter.
 
-**`memberof`** BaseHashingAdapter
+**`Memberof`**
+
+BaseHashingAdapter
 
 #### Parameters
 
@@ -105,7 +107,9 @@ dist/cjs/simple-hash.adapter.d.ts:12
 
 ▸ `Protected` **_hash**(`password`, `salt`): `Promise`<`Buffer`\>
 
-**`memberof`** SimpleHashHashingAdapter
+**`Memberof`**
+
+SimpleHashHashingAdapter
 
 #### Parameters
 
@@ -134,7 +138,9 @@ ___
 
 ▸ `Protected` **_verify**(`password`, `salt`, `hash`): `Promise`<`boolean`\>
 
-**`memberof`** BaseHashingAdapter
+**`Memberof`**
+
+BaseHashingAdapter
 
 #### Parameters
 
@@ -164,7 +170,9 @@ ___
 
 ▸ **hash**(`options`): `Promise`<`string`\>
 
-**`memberof`** BaseHashingAdapter
+**`Memberof`**
+
+BaseHashingAdapter
 
 #### Parameters
 
@@ -190,7 +198,9 @@ ___
 
 ▸ **verify**(`options`): `Promise`<`boolean`\>
 
-**`memberof`** BaseHashingAdapter
+**`Memberof`**
+
+BaseHashingAdapter
 
 #### Parameters
 

@@ -4,7 +4,7 @@
 
 [pbkdf2](../modules/pbkdf2.md).PBKDF2HashingAdapter
 
-**`export`**
+**`Export`**
 
 ## Hierarchy
 
@@ -41,7 +41,9 @@
 
 Creates an instance of BaseHashingAdapter.
 
-**`memberof`** BaseHashingAdapter
+**`Memberof`**
+
+BaseHashingAdapter
 
 #### Parameters
 
@@ -121,7 +123,9 @@ dist/cjs/adapters/pbkdf2.d.ts:11
 
 ▸ `Protected` **_hash**(`password`, `salt`): `Promise`<`Buffer`\>
 
-**`memberof`** PBKDF2HashingAdapter
+**`Memberof`**
+
+PBKDF2HashingAdapter
 
 #### Parameters
 
@@ -150,7 +154,9 @@ ___
 
 ▸ `Protected` **_verify**(`password`, `salt`, `hash`): `Promise`<`boolean`\>
 
-**`memberof`** BaseHashingAdapter
+**`Memberof`**
+
+BaseHashingAdapter
 
 #### Parameters
 
@@ -180,7 +186,9 @@ ___
 
 ▸ **hash**(`options`): `Promise`<`string`\>
 
-**`memberof`** BaseHashingAdapter
+**`Memberof`**
+
+BaseHashingAdapter
 
 #### Parameters
 
@@ -206,7 +214,9 @@ ___
 
 ▸ **verify**(`options`): `Promise`<`boolean`\>
 
-**`memberof`** BaseHashingAdapter
+**`Memberof`**
+
+BaseHashingAdapter
 
 #### Parameters
 

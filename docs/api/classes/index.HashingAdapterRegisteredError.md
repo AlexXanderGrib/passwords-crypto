@@ -4,7 +4,7 @@
 
 [index](../modules/index.md).HashingAdapterRegisteredError
 
-**`export`**
+**`Export`**
 
 ## Hierarchy
 
@@ -30,7 +30,9 @@
 
 Creates an instance of HashingAdapterRegisteredError.
 
-**`memberof`** HashingAdapterRegisteredError
+**`Memberof`**
+
+HashingAdapterRegisteredError
 
 #### Parameters
 

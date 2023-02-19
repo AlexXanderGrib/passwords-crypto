@@ -4,9 +4,9 @@
 
 [argon2d](../modules/argon2d.md).[<internal>](../modules/argon2d._internal_.md).Argon2HashingAdapter
 
-**`export`**
+**`Export`**
 
-**`abstract`**
+**`Abstract`**
 
 ## Hierarchy
 
@@ -48,7 +48,9 @@
 
 Creates an instance of BaseHashingAdapter.
 
-**`memberof`** BaseHashingAdapter
+**`Memberof`**
+
+BaseHashingAdapter
 
 #### Parameters
 
@@ -106,7 +108,7 @@ ___
 
 ### type
 
-• `Readonly` `Abstract` **type**: `undefined` \| ``0`` \| ``1`` \| ``2``
+• `Readonly` `Abstract` **type**: `undefined` \| ``0`` \| ``2`` \| ``1``
 
 #### Defined in
 
@@ -118,7 +120,9 @@ dist/cjs/argon2.adapter.d.ts:14
 
 ▸ `Protected` **_hash**(`password`, `salt`): `Promise`<`Buffer`\>
 
-**`memberof`** Argon2HashingAdapter
+**`Memberof`**
+
+Argon2HashingAdapter
 
 #### Parameters
 
@@ -147,7 +151,9 @@ ___
 
 ▸ `Protected` **_verify**(`password`, `salt`, `hash`): `Promise`<`boolean`\>
 
-**`memberof`** Argon2HashingAdapter
+**`Memberof`**
+
+Argon2HashingAdapter
 
 #### Parameters
 
@@ -177,7 +183,9 @@ ___
 
 ▸ **hash**(`options`): `Promise`<`string`\>
 
-**`memberof`** BaseHashingAdapter
+**`Memberof`**
+
+BaseHashingAdapter
 
 #### Parameters
 
@@ -203,7 +211,9 @@ ___
 
 ▸ **verify**(`options`): `Promise`<`boolean`\>
 
-**`memberof`** BaseHashingAdapter
+**`Memberof`**
+
+BaseHashingAdapter
 
 #### Parameters
 

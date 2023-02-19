@@ -4,7 +4,7 @@
 
 ## Table of contents
 
-### Namespaces
+### Modules
 
 - [&lt;internal\&gt;](index._internal_.md)
 
@@ -27,7 +27,7 @@
 - [InstanceOptions](../interfaces/index.InstanceOptions.md)
 - [VerificationOptions](../interfaces/index.VerificationOptions.md)
 
-### Type aliases
+### Type Aliases
 
 - [AdapterClass](index.md#adapterclass)
 
@@ -35,7 +35,7 @@
 
 - [instanceDefaults](index.md#instancedefaults)
 
-## Type aliases
+## Type Aliases
 
 ### AdapterClass
 

@@ -4,7 +4,7 @@
 
 ## Table of contents
 
-### Namespaces
+### Modules
 
 - [&lt;internal\&gt;](argon2d._internal_.md)
 

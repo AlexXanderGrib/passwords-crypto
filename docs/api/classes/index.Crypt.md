@@ -4,7 +4,7 @@
 
 [index](../modules/index.md).Crypt
 
-**`export`**
+**`Export`**
 
 ## Table of contents
 
@@ -39,7 +39,9 @@
 
 Creates an instance of Crypt.
 
-**`memberof`** Crypt
+**`Memberof`**
+
+Crypt
 
 #### Parameters
 
@@ -87,9 +89,9 @@ dist/cjs/crypt.d.ts:56
 
 • `get` **adapterNames**(): `string`[]
 
-**`readonly`**
+**`Memberof`**
 
-**`memberof`** Crypt
+Crypt
 
 #### Returns
 
@@ -105,9 +107,9 @@ ___
 
 • `get` **adapters**(): [`HashingAdapter`](../interfaces/index.HashingAdapter.md)[]
 
-**`readonly`**
+**`Memberof`**
 
-**`memberof`** Crypt
+Crypt
 
 #### Returns
 
@@ -123,7 +125,9 @@ dist/cjs/crypt.d.ts:81
 
 ▸ `Protected` **_getAdapter**(`name`): [`HashingAdapter`](../interfaces/index.HashingAdapter.md)
 
-**`memberof`** Crypt
+**`Memberof`**
+
+Crypt
 
 #### Parameters
 
@@ -147,7 +151,9 @@ ___
 
 ▸ **hash**(`password`, `options?`): `Promise`<`string`\>
 
-**`memberof`** Crypt
+**`Memberof`**
+
+Crypt
 
 #### Parameters
 
@@ -172,7 +178,9 @@ ___
 
 ▸ **register**(`adapterClass`): [`Crypt`](index.Crypt.md)
 
-**`memberof`** Crypt
+**`Memberof`**
+
+Crypt
 
 #### Parameters
 
@@ -196,7 +204,9 @@ ___
 
 ▸ **verify**(`hash`, `password`, `options?`): `Promise`<`boolean`\>
 
-**`memberof`** Crypt
+**`Memberof`**
+
+Crypt
 
 #### Parameters
 
@@ -222,9 +232,11 @@ ___
 
 ▸ `Static` **withSingleAdapter**(`adapter`, `options?`): [`Crypt`](index.Crypt.md)
 
-**`static`**
+**`Static`**
 
-**`memberof`** Crypt
+**`Memberof`**
+
+Crypt
 
 #### Parameters
 

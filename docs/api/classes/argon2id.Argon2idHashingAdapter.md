@@ -4,7 +4,7 @@
 
 [argon2id](../modules/argon2id.md).Argon2idHashingAdapter
 
-**`export`**
+**`Export`**
 
 ## Hierarchy
 
@@ -40,7 +40,9 @@
 
 Creates an instance of BaseHashingAdapter.
 
-**`memberof`** BaseHashingAdapter
+**`Memberof`**
+
+BaseHashingAdapter
 
 #### Parameters
 
@@ -118,7 +120,9 @@ dist/cjs/adapters/argon2id.d.ts:11
 
 ▸ `Protected` **_hash**(`password`, `salt`): `Promise`<`Buffer`\>
 
-**`memberof`** Argon2HashingAdapter
+**`Memberof`**
+
+Argon2HashingAdapter
 
 #### Parameters
 
@@ -147,7 +151,9 @@ ___
 
 ▸ `Protected` **_verify**(`password`, `salt`, `hash`): `Promise`<`boolean`\>
 
-**`memberof`** Argon2HashingAdapter
+**`Memberof`**
+
+Argon2HashingAdapter
 
 #### Parameters
 
@@ -177,7 +183,9 @@ ___
 
 ▸ **hash**(`options`): `Promise`<`string`\>
 
-**`memberof`** BaseHashingAdapter
+**`Memberof`**
+
+BaseHashingAdapter
 
 #### Parameters
 
@@ -203,7 +211,9 @@ ___
 
 ▸ **verify**(`options`): `Promise`<`boolean`\>
 
-**`memberof`** BaseHashingAdapter
+**`Memberof`**
+
+BaseHashingAdapter
 
 #### Parameters
 

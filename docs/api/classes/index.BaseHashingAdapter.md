@@ -4,9 +4,9 @@
 
 [index](../modules/index.md).BaseHashingAdapter
 
-**`export`**
+**`Export`**
 
-**`abstract`**
+**`Abstract`**
 
 ## Hierarchy
 
@@ -52,7 +52,9 @@
 
 Creates an instance of BaseHashingAdapter.
 
-**`memberof`** BaseHashingAdapter
+**`Memberof`**
+
+BaseHashingAdapter
 
 #### Parameters
 
@@ -115,7 +117,9 @@ ___
 
 ▸ `Protected` **_verify**(`password`, `salt`, `hash`): `Promise`<`boolean`\>
 
-**`memberof`** BaseHashingAdapter
+**`Memberof`**
+
+BaseHashingAdapter
 
 #### Parameters
 
@@ -141,7 +145,9 @@ ___
 
 ▸ **hash**(`options`): `Promise`<`string`\>
 
-**`memberof`** BaseHashingAdapter
+**`Memberof`**
+
+BaseHashingAdapter
 
 #### Parameters
 
@@ -167,7 +173,9 @@ ___
 
 ▸ **verify**(`options`): `Promise`<`boolean`\>
 
-**`memberof`** BaseHashingAdapter
+**`Memberof`**
+
+BaseHashingAdapter
 
 #### Parameters
 

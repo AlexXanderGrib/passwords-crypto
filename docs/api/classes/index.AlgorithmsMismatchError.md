@@ -4,7 +4,7 @@
 
 [index](../modules/index.md).AlgorithmsMismatchError
 
-**`export`**
+**`Export`**
 
 ## Hierarchy
 
@@ -31,7 +31,9 @@
 
 Creates an instance of AlgorithmsMismatchError.
 
-**`memberof`** AlgorithmsMismatchError
+**`Memberof`**
+
+AlgorithmsMismatchError
 
 #### Parameters
 

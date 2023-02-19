@@ -4,7 +4,7 @@
 
 [index](../modules/index.md).HashingAdapterNotFoundError
 
-**`export`**
+**`Export`**
 
 ## Hierarchy
 
@@ -30,7 +30,9 @@
 
 Creates an instance of HashingAdapterNotFoundError.
 
-**`memberof`** HashingAdapterNotFoundError
+**`Memberof`**
+
+HashingAdapterNotFoundError
 
 #### Parameters
 

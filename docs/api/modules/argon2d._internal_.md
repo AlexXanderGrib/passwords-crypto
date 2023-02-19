@@ -1,8 +1,6 @@
 [Crypt Pass](../README.md) / [Modules](../modules.md) / [argon2d](argon2d.md) / <internal\>
 
-# Namespace: <internal\>
-
-[argon2d](argon2d.md).<internal>
+# Module: <internal\>
 
 ## Table of contents
 

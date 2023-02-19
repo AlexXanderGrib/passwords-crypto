@@ -4,7 +4,7 @@
 
 [scrypt](../modules/scrypt.md).SCryptHashingAdapter
 
-**`export`**
+**`Export`**
 
 ## Hierarchy
 
@@ -39,7 +39,9 @@
 
 Creates an instance of BaseHashingAdapter.
 
-**`memberof`** BaseHashingAdapter
+**`Memberof`**
+
+BaseHashingAdapter
 
 #### Parameters
 
@@ -99,7 +101,9 @@ dist/cjs/adapters/scrypt.d.ts:11
 
 ▸ `Protected` **_hash**(`password`, `salt`): `Promise`<`Buffer`\>
 
-**`memberof`** SCryptHashingAdapter
+**`Memberof`**
+
+SCryptHashingAdapter
 
 #### Parameters
 
@@ -128,7 +132,9 @@ ___
 
 ▸ `Protected` **_verify**(`password`, `salt`, `hash`): `Promise`<`boolean`\>
 
-**`memberof`** BaseHashingAdapter
+**`Memberof`**
+
+BaseHashingAdapter
 
 #### Parameters
 
@@ -158,7 +164,9 @@ ___
 
 ▸ **hash**(`options`): `Promise`<`string`\>
 
-**`memberof`** BaseHashingAdapter
+**`Memberof`**
+
+BaseHashingAdapter
 
 #### Parameters
 
@@ -184,7 +192,9 @@ ___
 
 ▸ **verify**(`options`): `Promise`<`boolean`\>
 
-**`memberof`** BaseHashingAdapter
+**`Memberof`**
+
+BaseHashingAdapter
 
 #### Parameters
 
